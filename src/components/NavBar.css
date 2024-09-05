@@ -1,0 +1,109 @@
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between; /* Espaça os itens de forma que o conteúdo da barra de navegação fique à direita */
+  align-items: center;
+  padding: 1.3rem;
+  background-color: #222222c0;
+}
+
+#navbar h2 {
+  /* Adicione quaisquer estilos necessários para o título aqui, se houver */
+}
+
+#navbar form {
+  display: flex;
+  /* Ajuste a largura se necessário */
+}
+
+#navbar input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 05px 0 0 05px;
+  outline: none;
+}
+
+#navbar form button {
+  background-color: #f7d354;
+  border: none;
+  border-radius: 0 05px 05px 0;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed; /* Fixa a sidebar na posição em relação à tela */
+  top: 0;
+  left: 0; /* Muda a posição inicial para o lado esquerdo */
+  left: -250px; /* Inicialmente escondida */
+  width: 250px;
+  height: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+cursor: pointer;
+}
+
+.sidebar.open {
+  left: 0; /* Quando a sidebar está aberta, ela fica visível do lado esquerdo */
+
+}
+
+.sidebar a {
+  color: white;
+  padding: 1rem 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #616161;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.close-btn {
+  
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 1rem;
+
+}
+
+/* Overlay (fundo escuro que aparece quando a sidebar está aberta) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7d354;
+  z-index: 999;
+  display: none;
+}
+.overlay :hover{
+  background-color: #f7d354;
+}
+.overlay.active {
+  display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Largura menor em telas pequenas */
+  }
+}

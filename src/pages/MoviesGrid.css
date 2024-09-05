@@ -1,0 +1,170 @@
+/* Estilo do título */
+.container .title { 
+    color: rgb(241, 241, 234); /* Define a cor do texto do título */
+    font-size: 2.5rem; /* Define o tamanho da fonte do título */
+    text-align: center; /* Centraliza o título */
+    margin: 2rem 0 1rem; /* Define margens superior, inferior e inferior */
+}
+
+.title .query-text {
+    color: #f7d354; /* Define a cor do texto dentro do título com a classe 'query-text' */
+}
+
+/* Estilo dos filmes */
+.movies-container {
+    display: flex; /* Exibe os filmes em um layout flexível */
+    flex-wrap: wrap; /* Permite que os filmes "quebrem" para a próxima linha */
+    justify-content: space-between; /* Espaça igualmente os filmes na linha */
+    padding: 2rem; /* Define o preenchimento interno do container de filmes */
+    max-width: 1200px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.movies-container div {
+    width: 30%; /* Define a largura de cada filme como 30% do container */
+    color: rgb(255, 255, 255); /* Define a cor do texto dos filmes */
+    margin-bottom: 2.5rem; /* Adiciona um espaço abaixo de cada filme */
+    display: flex; /* Usa o layout flexível para o conteúdo dentro de cada filme */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: space-between; /* Distribui o conteúdo de cima a baixo */
+    background-color: #1d1c1c; /* Define a cor de fundo do filme */
+    padding: 1rem; /* Adiciona preenchimento interno */
+}
+
+.movies-container div img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+}
+
+.movies-container div img,
+.movies-container div p,
+.movies-container div h2 {
+    text-align: center;
+    margin-bottom: 1rem; /* Define uma margem inferior para imagens, parágrafos e títulos */
+}
+
+.movies-container div svg {
+    color: #f7d354; /* Define a cor de ícones SVG dentro dos filmes */
+}
+
+.movies-container div a {
+    background-color: #f7d354; /* Cor de fundo dos links */
+    border: 2px solid #f7d354; /* Adiciona uma borda ao link */
+    border-radius: 4px; /* Arredonda os cantos do link */
+    color: black; /* Cor do texto dentro dos links */
+    padding: 1rem 0.5rem; /* Define o preenchimento interno dos links */
+    text-align: center; /* Centraliza o texto dentro do link */
+    align-items: center; /* Centraliza os itens verticalmente */
+    cursor: pointer; /* Define o cursor de ponteiro ao passar sobre o link */
+    transition: 0.4s; /* Suaviza a transição ao passar o mouse sobre o link */
+    font-weight: bold; /* Define o texto do link como negrito */
+}
+
+.movies-container div a:hover {
+    background-color: transparent; /* Remove a cor de fundo ao passar o mouse */
+    color: #f7d354; /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Estilo da paginação */
+.page-info-container {
+    display: flex; /* Usa o layout flex para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    margin: 2rem 0; /* Adiciona margens acima e abaixo do container */
+}
+
+.page-info {
+    display: flex; /* Usa o layout flexível para os elementos da paginação */
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 1rem; /* Define o espaçamento entre os elementos */
+    font-size: 1rem; /* Define o tamanho do texto */
+    color: #fffefe; /* Define a cor do texto da paginação */
+    justify-content: center; /* Centraliza os elementos da paginação */
+}
+
+.page-info .current-page,
+.page-info .total-pages {
+    font-size: 1.2rem; /* Aumenta o tamanho do número da página atual e total */
+    font-weight: bold; /* Define o número como negrito */
+    color: #f7d354; /* Define a cor do número da página */
+}
+
+.page-info button {
+    background-color: #000000; /* Define a cor de fundo dos botões */
+    color: white; /* Define a cor do texto dos botões */
+    border: 1px solid #f7d354; /* Adiciona uma borda nos botões */
+    padding: 0.5rem 1rem; /* Define o preenchimento interno dos botões */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+    transition: 0.3s; /* Suaviza a transição ao passar o mouse */
+    font-weight: bold; /* Define o texto dos botões como negrito */
+    border-radius: 4px; /* Arredonda os cantos dos botões */
+}
+
+.page-info button:hover {
+    background-color: #f7d354; /* Muda a cor de fundo ao passar o mouse */
+    color: black; /* Muda a cor do texto ao passar o mouse */
+}
+
+.page-info button:disabled {
+    background-color: #2e2e2e; /* Define a cor de fundo dos botões desativados */
+    color: #aaa; /* Define a cor do texto dos botões desativados */
+    cursor: not-allowed; /* Altera o cursor para indicar que está desativado */
+}
+
+.error-message {
+    background-color: white; /* Define a cor de fundo da mensagem de erro */
+    color: #fff; /* Define a cor do texto (parece incorreto, deveria ser outra cor) */
+    padding: 1.5rem; /* Define o preenchimento interno */
+    margin: 2rem auto; /* Adiciona margem externa e centraliza a mensagem */
+    border-radius: 8px; /* Arredonda os cantos da mensagem de erro */
+    max-width: 600px; /* Define a largura máxima da mensagem */
+    text-align: center; /* Centraliza o texto da mensagem */
+    box-shadow: 0px 4px 6px rgba(248, 246, 246, 0.459); /* Adiciona sombra para efeito de elevação */
+    font-size: 1.2rem; /* Define o tamanho do texto */
+    font-weight: bold; /* Define o texto como negrito */
+}
+
+.error-message p {
+    margin: 0; /* Remove a margem padrão dos parágrafos */
+}
+
+/* Estilos padrão (Tema Escuro) */
+.container.dark {
+    background-color: #121212; /* Cor de fundo para o tema escuro */
+    color: #ffffff; /* Cor do texto no tema escuro */
+}
+
+.movies-container {
+    display: flex; /* Layout flexível */
+    flex-wrap: wrap; /* Quebra os itens em múltiplas linhas, se necessário */
+    gap: 16px; /* Espaçamento entre os filmes */
+}
+
+.page-info-container {
+    margin-top: 20px; /* Espaçamento superior da página de paginação */
+    display: flex; /* Layout flexível */
+    justify-content: center; /* Centraliza o conteúdo */
+}
+
+.page-info button {
+    margin: 0 10px; /* Define o espaçamento horizontal dos botões */
+    padding: 8px 16px; /* Preenchimento interno dos botões */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+}
+
+/* Estilos para Tema Claro */
+.container.light {
+    background-color: #ffffff; /* Cor de fundo para o tema claro */
+    color: #000000; /* Cor do texto no tema claro */
+}
+
+.theme-toggle {
+    display: flex; /* Layout flexível */
+    justify-content: flex-end; /* Alinha o botão de alternância de tema à direita */
+    padding: 10px; /* Define o preenchimento interno */
+   
+}
+
+.theme-toggle button {
+    padding: 8px 16px; /* Define o preenchimento interno do botão */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+}

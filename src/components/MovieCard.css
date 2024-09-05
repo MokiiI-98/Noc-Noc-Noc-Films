@@ -1,0 +1,20 @@
+.movie-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.genre-tag {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo com leve transparência */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Borda clara com leve transparência */
+  border-radius: 20px; /* Bordas arredondadas */
+  padding: 5px 15px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+  color: #fff; /* Cor do texto */
+  transition: background-color 0.3s ease;
+}
+
+.genre-tag:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Fundo mais claro ao passar o mouse */
+}

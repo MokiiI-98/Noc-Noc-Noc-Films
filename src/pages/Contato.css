@@ -1,0 +1,81 @@
+/* Contêiner principal */
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(16, 19, 16);
+  }
+  
+  /* Centralizando a imagem */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+  }
+  
+  .center-image {
+    width:400px; /* A imagem ocupa no máximo 50% da largura da tela */
+    height: auto; /* Proporção mantida */
+    object-fit: cover;
+    border: none;
+    border-radius: 23px; /* Cantos arredondados para um toque suave */
+  }
+  
+  /* Rodapé mais visível e adaptável */
+  .footer {
+    width: 100%;
+    background-color: #222;
+    color:  #f7d354;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os links */
+    margin-top: 10px;
+  }
+  
+  .footer a {
+    color: #f7d354;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 1024px) {
+    .center-image {
+      max-width: 60%; /* Ajusta a imagem para telas médias */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .center-image {
+      max-width: 80%; /* A imagem ocupará 80% da tela em dispositivos menores */
+    }
+  
+    .footer {
+      padding: 15px 0;
+      font-size: 1rem;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 10px; /* Espaçamento menor entre os links em telas menores */
+    }
+  }
+  
